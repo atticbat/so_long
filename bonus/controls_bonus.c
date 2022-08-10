@@ -6,17 +6,15 @@
 /*   By: khatlas < khatlas@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/03 21:08:57 by khatlas           #+#    #+#             */
-/*   Updated: 2022/07/09 02:03:12 by khatlas          ###   ########.fr       */
+/*   Updated: 2022/08/10 03:32:08 by khatlas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/so_long_bonus.h"
 
-int	close_win(int keycode, t_ctrl *ctrl)
+int	close_win(int keycode)
 {
 	if (keycode)
-		;
-	if (ctrl)
 		;
 	ft_printf("Game closed successfully\nLevel not completed\n");
 	exit(0);

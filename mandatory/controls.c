@@ -6,13 +6,13 @@
 /*   By: khatlas < khatlas@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/03 21:08:57 by khatlas           #+#    #+#             */
-/*   Updated: 2022/07/09 01:46:21 by khatlas          ###   ########.fr       */
+/*   Updated: 2022/08/10 03:30:45 by khatlas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/so_long.h"
 
-int	close_win(int keycode, t_ctrl *ctrl)
+int	close_win(int keycode)
 {
 	if (keycode)
 		;

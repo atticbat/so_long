@@ -6,7 +6,7 @@
 /*   By: khatlas < khatlas@student.42heilbronn.d    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 04:09:06 by khatlas           #+#    #+#             */
-/*   Updated: 2022/07/09 01:59:09 by khatlas          ###   ########.fr       */
+/*   Updated: 2022/08/10 03:31:29 by khatlas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ typedef struct s_ctrl
 t_tiles		initialise_tiles(void *mlx);
 char		**generate_table(t_ctrl *ctrl, char *argv);
 int			button_press(int keycode, t_ctrl *ctrl);
-int			close_win(int keycode, t_ctrl *ctrl);
+int			close_win(int keycode);
 int			ft_abs(int n);
 int			check_no_move(t_v2 to_move);
 void		draw_field(t_ctrl *ctrl);
@@ -96,7 +96,7 @@ int			check_collision(t_player *player, t_ctrl *ctrl, t_v2 \
 	to_loc,	int is_player);
 void		make_move(t_player *player, t_ctrl *ctrl, t_v2 grid_change, \
 	t_v2 modes);
-size_t		ft_linelen(const char *str);
+int			ft_linelen(const char *str);
 void		game_loop(t_ctrl *ctrl);
 void		move_enemy(t_ctrl *ctrl, int i);
 void		exit_game(t_ctrl *ctrl);
